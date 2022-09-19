@@ -347,6 +347,29 @@
                         <mxPoint x="1220" y="905" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
+                <mxCell id="84" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;strokeColor=#000000;" edge="1" parent="1" target="86">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1035.018846153846" y="1445" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="85" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;strokeColor=#000000;" edge="1" parent="1" source="86" target="87">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="INPUT customer_money&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=14;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="929.3" y="1545" width="211.43" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="change_money = &lt;br&gt;customer_money - total_payment" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="923.76" y="1717.5" width="222.5" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;strokeColor=#000000;" edge="1" parent="1" source="89" target="90">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="change_money = &lt;br&gt;customer_money - total_payment" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#ffff88;strokeColor=#36393d;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="923.75" y="1717.5" width="222.5" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="PRINT item, price, quantity, discount_price, total_payment, customer_money, change_money" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#ffff88;strokeColor=#36393d;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="923.75" y="1880" width="222.5" height="75" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
