@@ -52,3 +52,9 @@ ELSE
     STORE "discount_price" with 0
     STORE "total_payment" with CALCULATE "total_payment" MINUS "discount_price"
 END IF
+
+PRINT "Total yang harus dibayar adalah : " + "total_payment"
+
+PRINT "Masukan uang customer : "
+READ AND WRITE "customer_money" with NUMBER
+STORE "change_money" with CALCULATE "customer_money" MINUS "total_payment"
