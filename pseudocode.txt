@@ -2,3 +2,45 @@ PROGRAM SISTEM_KASIR_RESTAURANT
 
 STORE "order" AS BOOLEAN with TRUE
 STORE "total_payment" AS NUMBER with 0
+
+WHILE "order" is TRUE
+
+    DISPLAY "list food menu"
+
+    READ AND WRITE "food_code" with STRING
+    READ AND WRITE "quantity" with NUMBER
+
+    IF food_code EQUAL "001"
+        STORE "item" with fried rice
+        STORE "food_price" with 15000
+        STORE "total_payment" with CALCULATE "total_payment" PLUS ("food_price" multiply by "quantity")
+    ELSE IF food_code EQUAL "002"
+        STORE "item" with roasted chicken
+        STORE "food_price" with 25000
+        STORE "total_payment" with CALCULATE "total_payment" PLUS ("food_price" multiply by "quantity")
+    ELSE IF cake_code EQUAL "003"
+        STORE "item" with chicken noodles
+        STORE "food_price" with 15000
+        STORE "total_payment" with CALCULATE "total_payment" PLUS ("food_price" multiply by "quantity")
+    ELSE IF food_code EQUAL "004"
+        STORE "item" with fried chicken
+        STORE "food_price" with 20000
+        STORE "total_payment" with CALCULATE "total_payment" PLUS ("food_price" multiply by "quantity")
+    ELSE IF food_code EQUAL "005"
+        STORE "item" with grilled fish
+        STORE "food_price" with 25000
+        STORE "total_payment" with CALCULATE "total_payment" PLUS ("food_price" multiply by "quantity")
+    ELSE
+        PRINT "Invalid Code"
+    END IF
+
+
+    READ AND WRITE "order_again" with STRING
+
+    IF "order_again" EQUAL "YES"
+        STORE "order" with TRUE
+    ELSE IF "order_again" EQUAL "NO"
+        STORE "order" with FALSE
+    END IF
+
+END WHILE
