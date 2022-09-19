@@ -58,3 +58,11 @@ PRINT "Total yang harus dibayar adalah : " + "total_payment"
 PRINT "Masukan uang customer : "
 READ AND WRITE "customer_money" with NUMBER
 STORE "change_money" with CALCULATE "customer_money" MINUS "total_payment"
+
+PRINT "Item : " + "item"
+PRINT "Price : " + "price"
+PRINT "Quantity : " + "quantity"
+PRINT "Discount : " + "discount_price"
+PRINT "Total Payment : " + "total payment"
+PRINT "Customer's money : " + "customer_money"
+PRINT "Change : " + "change_money"
